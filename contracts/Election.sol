@@ -49,7 +49,7 @@ contract Election{
 
         candidates[_candidateId].voteCount ++;
 
-        uint candidateId = _candidateId;
+        //uint candidateId = _candidateId;
 
         emit votedEvent(_candidateId);
     }
