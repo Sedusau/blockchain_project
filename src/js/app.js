@@ -143,9 +143,9 @@ App = {
           // Do not allow a user to vote twice
           if(hasVoted) {
             $('form').hide();
-              $("#index-text").html("You are successfully logged in!");
+              $("#index-text").html("Has iniciado sesión correctamente!");
               $("#new-candidate").html("New candidates can't be added. The election process has already started.");
-            $("#vote-text").html("Vote casted succesfully for candidate " + localStorage.getItem("votedForID"));
+            $("#vote-text").html("Voto emitido con exito" + localStorage.getItem("votedForID"));
           }
           loader.hide();
           content.show();
@@ -170,8 +170,8 @@ App = {
 
             if (localStorage.getItem("finishElection") === "1") {
                 $('form').hide();
-                $("#index-text").html("There is no active election ongoing at the moment");
-                $("#vote-text").html("No active voting ongoing");
+                $("#index-text").html("No hay ninguna elección activa en curso en este momento");
+                $("#vote-text").html("No hay votación activa en curso");
                 // $("#result-text").html("The voting process has ended. These are the final results");
                 document.querySelector('.addCandidateForm').style.display = 'block';
                 // document.querySelector('.reg').style.display = 'none';

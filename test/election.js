@@ -31,8 +31,6 @@ contract ("Election", (accounts) => {
     });
 
 
-///CODE IN ASYNC AWAIT SYNTAX
-/// CODE WAS LATER CHANGED TO PROMISES
     it("allows a voter to cast a vote", function() {
         return Election.deployed().then(function(instance) {
             electionInstance = instance;

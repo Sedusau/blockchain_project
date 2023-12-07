@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>BC Vote</title>
-
+    <title>Sistema de Votacion</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,12 +24,7 @@
     <!-- Other Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+ 
 </head>
 <body>
 
@@ -42,10 +35,10 @@
     <div class="container">
 
         <div class="pull-left" id="logo">
-            <!-- Uncomment below if you prefer to use a text logo -->
-            <h1><a ><span>BC-</span>VOTE</a></h1>
-                <button type="button" class="btn" style="background-color: #f82249; color: white" onclick="App.startElection(); return false">Start Election</button>
-                <button type="button" class="btn" style="background-color: #f82249; color: white" onclick="App.endElection(); return false">End Election</button>
+           
+            <h1><a ><span>Sistema</span>de Votacion</a></h1>
+                <button type="button" class="btn" style="background-color: #f82249; color: white" onclick="App.startElection(); return false">Comenzar Eleccion</button>
+                <button type="button" class="btn" style="background-color: #f82249; color: white" onclick="App.endElection(); return false">Finalizar Eleccion</button>
         </div>
 
         <div class="display">
@@ -55,23 +48,23 @@
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li class="reg" ><a href="index.html" >Register / Login</a></li>
-                <li class="vot"><a href="vote.html" >Vote</a></li>
-                <li class="res"><a href="results.html" >Results</a></li>
-                <li class="buy-tickets"><a href="admin.html">Admin Panel</a>
+                <li class="reg" ><a href="index.html" >Registro / Login</a></li>
+                <li class="vot"><a href="vote.html" >Votar</a></li>
+                <li class="res"><a href="results.html" >Resultados</a></li>
+                <li class="buy-tickets"><a href="admin.html">Panel de Administracion</a>
 
                 </li>
             </ul>
-        </nav><!-- #nav-menu-container -->
+        </nav>
     </div>
-</header><!-- #header -->
+</header>
 
 <!--==========================
   Intro Section
 ============================-->
 <section id="intro" >
     <div class="intro-container wow fadeIn">
-<!--        <h1   style="text-transform: initial">Admin<span> Panel</span></h1>-->
+
         <div id="loader">
             <svg class="loader" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="170" cy="170" r="160" stroke="#E2007C"/>
@@ -85,15 +78,15 @@
 
 
 
-                <p>Candidates <button type="button" class="btn" style="background-color: #f82249; color: white" onclick="location.href='addCandidate.html';">Add new Candidate</button></p>
+                <p>Candidatos <button type="button" class="btn" style="background-color: #f82249; color: white" onclick="location.href='addCandidate.html';">Añadir un nuevo candidato</button></p>
 
                 <table class="container table table-sm table-bordered "   style="color: white; width: 600px;">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">ID / Passport Number</th>
-                        <th scope="col">Votes</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">CI / Numero de pasaporte</th>
+                        <th scope="col">Votos</th>
                     </tr>
                     </thead>
                     <tbody id="candidatesResults">
@@ -101,14 +94,14 @@
                 </table>
 
 
-                <p >Voters</p>
+                <p >Votantes</p>
                 <table class="container table table-sm table-bordered "   style="color: white; ">
                     <thead class="thead-dark">
                     <tr >
-                        <th scope="col" >Name</th>
-                        <th scope="col">ID / Passport Number</th>
+                        <th scope="col" >Nombre</th>
+                        <th scope="col">CI / Numero de Pasaporte</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Address</th>
+                        <th scope="col">Direccion</th>
                     </tr>
                     </thead>
                     <tbody id="voterz">
@@ -124,9 +117,9 @@
     </div>
 </section>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/web3.min.js"></script>
 <script src="js/truffle-contract.js"></script>
@@ -141,7 +134,7 @@
 <script src="others/wow/wow.min.js"></script>
 <script src="others/venobox/venobox.min.js"></script>
 <script src="others/owlcarousel/owl.carousel.min.js"></script>
-<!-- Main Javascript File -->
+
 <script src="js/main.js"></script>
 <script src="js/countdown.js"></script>
 </body>
