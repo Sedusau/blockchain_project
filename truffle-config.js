@@ -20,10 +20,10 @@ module.exports = {
       ),
       network_id:11155111,
       gas: 4000000, // Adjust the gas limit as per your requirements
- gasPrice: 10000000000, // Set the gas price to an appropriate value
- confirmations: 2, // Set the number of confirmations needed for a transaction
- timeoutBlocks: 200, // Set the timeout for transactions
- skipDryRun: true // Skip the dry run option
+      gasPrice: 10000000000, // Set the gas price to an appropriate value
+      confirmations: 2, // Set the number of confirmations needed for a transaction
+      timeoutBlocks: 200, // Set the timeout for transactions
+      skipDryRun: true // Skip the dry run option
       
     }
   },
